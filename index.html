@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Интернет-магазин </title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styletrenirovka.css" media="all">
+  </head>
+    
+  <body>
+      <script  SRC = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" > </script  > 
+      <script src="js/bootstrap.js"> </script>
+      <script type="text/javascript"
+       src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	                      
+	       <header >       <!--  style="background-image: url(images/hed55.jpg)" -->
+	              
+	       
+	                       <div class="fonheadera">  </div>
+               <div  style="background-image: url(images/hed5.jpg)" class="container">
+                    <div class="col-md-9">
+                        <div style="float:left;"> <img src="images/hedlogo.jpg" > </div>
+                        <div style="float:left;">  
+                           <div style="background-image:url('images/hed22.jpg'); width: 175px; height: 150px">
+                             <div style="position: relative; top: 30px; left: 60px"> <a style="color:white; font-size:17px;" href="#"> Для женщин </a> </div>
+                           </div>
+                        </div>
+                        <div style="float:left;">  
+                           <div style="background-image:url('images/hed33.jpg'); width: 170px; height: 150px">
+                             <div style="position: relative; top: 30px; left: 60px"> <a style="color:white; font-size:17px;" href="#"> Для мужчин </a> </div>
+                           </div>
+                        </div>
+                          <div style=""> <a href="#"> <img src="images/hed4.jpg" > </a> </div>
+               <!--         <div style="float:left;" > 
+                              <div style="background-image:url('images/hed44.jpg'); width: 165px; height: 150px">
+                             <div style="position: relative; top: 30px; left: 65px"> <a style="color:white; font-size:17px;" href="#"> Для детей </a> </div>
+                           </div>
+                        </div>   -->
+                     </div>	             
+                     <div class="col-md-3">   	             
+                         <div > 
+                            <span  style="float:left;">
+                              </br>
+                              </br>	
+                              </br>
+                              </br>              
+   	                        <a href="#"> <img src="images/strelka.jpg">   </a> 
+	                        </span> 
+	                          </br>
+                             </br>	
+                             </br>
+                             </br>  
+	                       <span style="float:left;"> <img src="images/keis.jpg">
+	                       </span>
+	                       <span> 
+	                           <section>
+	                               <span style="color:white;"> Товаров: &nbsp &nbsp &nbsp <span> <input type="text" class="inputhed" size="5"> </span> 
+	                               </span> 
+	                                   </br>
+	                              <span style="color:white;"> К оплате: &nbsp &nbsp   <span> <input type="text" class="inputhed" size="6"> </span>
+	                              </span> 
+	                          </section>
+	                      </span>
+	                   </div>   
+                  </div>
+                          	             
+                </div>	                         	          
+	        </header>
+	                  
+	                  </br>
+	                  </br>   
+			
+	<div class="container">		  
+	   <div class="row">
+          <div class="col-md-3">
+          
+           <div class="navbar-header">
+				    <button type="button"class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+					<span class="sr-only"> Открыть навигацию</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar">  </span>
+					<span class="icon-bar"></span>
+					</button>
+			  </div>
+                           
+              
+		<div id="menu">       
+			<h2>Каталог</h2>
+				          
+<ul class="nav" id="katalogmenu">   
+ <li> 
+ 	 <a href="#">Носки <i class="glyphicon glyphicon-triangle-bottom triangle"></i></a>
+    <ul class="sub-menu">
+     <li><a href="#">Шерстяные</a></li>     
+     <li><a href="#">Хлопковые</a></li>
+    </ul>      
+ </li>
+   <li class="delimiter">&nbsp;</li>
+ <li>
+ 	<a href="#">Тапки <i class="glyphicon glyphicon-triangle-bottom triangle"></i></a>
+   <ul class="sub-menu">
+     <li><a href="#">Шерстяные</a></li>    
+     <li><a href="#">Хлопковые</a></li>
+    </ul>
+ </li>
+ <li class="delimiter">&nbsp;</li>     
+ <li><a href="#"> Балетки <i class="glyphicon glyphicon-triangle-bottom triangle"></i></a>
+    <ul class="sub-menu">
+     <li><a href="#">Шерстяные</a></li>         
+     <li><a  style="color:a7a7a7;" href="#">Хлопковые</a></li>
+    </ul>
+ </li>
+ <li class="delimiter">&nbsp;</li>          
+ <li><a href="#"> Босоножки <i class="glyphicon glyphicon-triangle-bottom triangle"></i></a>
+    <ul class="sub-menu">
+     <li><a href="#">Шерстяные</a></li>      
+     <li><a href="#">Хлопковые</a></li>
+    </ul>
+ </li>
+</ul> 
+</div>
+                          
+                           
+
+
+
+                                    <!-- меню каталог СТАРТ (вертикальное раздвижное меню)  -->
+                              <script type="text/javascript">
+                               $(document).ready(function() {
+                               $("#katalogmenu ul").hide();
+                               $("#katalogmenu li a").click(function() 
+                               { 
+                               		$(this).children().toggleClass('glyphicon-triangle-bottom').toggleClass('glyphicon-triangle-left');;                               		
+                               		$(this).next().slideToggle("normal"); 
+                               		return false; 
+                               });
+                                });
+                              </script>
+                                      <!--  меню каталог ФИНИШ (вертикальное раздвижное меню) -->
+				        </br>
+				        </br>
+				          <!-- подобрать размеры старт -->
+				     <div class="bort">   
+				          <span  class="levoenazvanie">  Подобрать 
+				          </span>  
+				      </br>
+				      </br>
+				          <span> Размеры:
+			           	</span>
+				      </br>
+				      </br>
+				          <div>
+				          <span class="razmer"> <a href="#"> 36/37 </a> </span>    <span class="razmerdva"> <a href="#"> 37/38 </a> </span>   <span class="razmer"> <a href="#"> 39/40 </a> </span>  <span class="razmer"> <a href="#"> 41/42 </a> </span>   <span class="razmer"> <a href="#"> 42/43 </a> </span>    
+				          </div>
+				     </br>
+				     </br>
+				      	<span> Цена:
+				         </span> 
+				                </br>
+				                </br>
+				              <nav> 
+				               <ul style="background:#ccdadb; list-style: none;">
+				                  <li>
+					                   <input type="checkbox"> <a style="color:black;" href="#">  до 500 </a>
+					               </li>
+					                <li>
+					                    <input type="checkbox"> <a style="color:black;" href="#">  от 500 до 1000 </a>
+					               </li>
+					               <li>
+					                   <input type="checkbox"> <a style="color:black;" href="#">  от 1000 до 1500 </a>
+				               	 </li>
+				               	 <li>
+					                   <input type="checkbox"> <a style="color:black;" href="#">  от 1500 до 2000 </a>
+					                </li>
+					               <li>
+					                   <input type="checkbox">  <a style="color:black;" href="#">  от 2000 до 2500 </a>
+					              </li>
+					              <li>
+					                  <input type="checkbox"> <a style="color:black;" href="#">  от 2500 до 3000 </a>
+					             </li>
+		   	    	     </ul>
+		   	    	     </nav>
+				      
+				  </div>      
+				          <!-- подобрать размеры финишь -->
+				         </br>
+				         </br>  
+				       <div> <a href="#"> <img src="images/1vk.jpg">  </a> 
+				       </div>   
+           </div>
+                           <!-- центральный контент старт -->
+          <div class="col-md-9"> 
+              <div> &nbsp&nbsp&nbsp&nbsp <a style="font-size:25; color:black;" href="#">  Главная  </a> &nbsp&nbsp >> &nbsp&nbsp  <a style="font-size:25; color:black;" href="#"> Для мужчин  </a> &nbsp&nbsp >> &nbsp&nbsp
+				          <a style="font-size:25; color:red;" href="#"> Новинки </a>
+				   </div> 
+				      <div class="navbar-header" >
+				    <button type="button"class="navbar-toggle" data-toggle="collapse" data-target="#respo-menu">
+					<span class="sr-only"> Открыть навигацию</span>
+					<span class="icon-bar"> </span>
+					<span class="icon-bar"> Сортировать</span>
+					<span class="icon-bar"> </span>
+					</button>
+				 </div>	
+				    <div class="collapse navbar-collapse" id="respo-menu">
+				       <ul  class="nav navbar-nav">
+				        <li>
+					      <a style="color:black;" href="#" class="dropdown-toggle" data-toggle="dropdown"> Сортировать: </a>
+					        <ul class="dropdown-menu">
+					            <li>
+					               <a style="color:black;" href="#">  по возрастанию цены  </a>
+					            </li>
+					                              <li class="divider"></li>
+					            <li>
+					                <a style="color:black;" href="#"> по убыванию цены </a>
+					            </li>
+					                               <li class="divider"></li>
+					             <li>
+					                <a style="color:black;" href="#"> по популярности </a>
+					            </li>
+					        </ul>
+					     </li>
+					    </ul> 
+				   </div>
+				   
+				                    <div class="col-md-4">
+				         
+				         <div class="fotogiraf">
+				         </br>
+				        <span> Тапки "Жирафы" </span>
+				        </br>
+				        </br>
+				        <div> <img src="images/giraf.jpg"> </div>
+				        </br>
+				        <span class="cena"> <strong> &nbsp &nbsp 1250P &nbsp &nbsp </strong> </span>
+				        <span> <a class="vkorzinu" href="#"> &nbsp  в корзину  &nbsp </a>  </span>
+				        </br>
+				        </br>
+				        </div>
+				        
+				        </br>
+				        </br>
+				        
+				         <div class="fotogiraf">
+				         </br>
+				        <span> Тапки "Жирафы" </span>
+				        </br>
+				        </br>
+				        <div> <img src="images/giraf.jpg"> </div>
+				        </br>
+				        <span class="cena"> <strong> &nbsp &nbsp 1250P &nbsp &nbsp </strong> </span>
+				        <span> <a class="vkorzinu" href="#"> &nbsp  в корзину  &nbsp </a>  </span>
+				        </br>
+				        </br>
+				        </div> 
+				        
+				        </br>
+				        </br>
+				        
+				         <div class="fotogiraf">
+				         </br>
+				        <span> Тапки "Жирафы" </span>
+				        </br>
+				        </br>
+				        <div> <img src="images/giraf.jpg"> </div>
+				        </br>
+				        <span class="cena"> <strong> &nbsp &nbsp 1250P &nbsp &nbsp </strong> </span>
+				        <span> <a class="vkorzinu" href="#"> &nbsp  в корзину  &nbsp </a>  </span>
+				        </br>
+				        </br>
+				        </div> 
+				        
+				        </br>
+				        </br>
+				        
+				         <div class="fotogiraf">
+				         </br>
+				        <span> Тапки "Жирафы" </span>
+				        </br>
+				        </br>
+				        <div> <img src="images/giraf.jpg"> </div>
+				        </br>
+				        <span class="cena"> <strong> &nbsp &nbsp 1250P &nbsp &nbsp </strong> </span>
+				        <span> <a class="vkorzinu" href="#"> &nbsp  в корзину  &nbsp </a>  </span>
+				        </br>
+				        </br>
+				        </div> 
+				        
+				        </br>
+				        </br>
+				        
+				         <div class="fotogiraf">
+				         </br>
+				        <span> Тапки "Жирафы" </span>
+				        </br>
+				        </br>
+				        <div> <img src="images/giraf.jpg"> </div>
+				        </br>
+				        <span class="cena"> <strong> &nbsp &nbsp 1250P &nbsp &nbsp </strong> </span>
+				        <span> <a class="vkorzinu" href="#"> &nbsp  в корзину  &nbsp </a>  </span>
+				        </br>
+				        </br>
+				        </div> 
+				        
+				        </br>
+				        </br>
+				        
+				         <div class="fotogiraf">
+				         </br>
+				        <span> Тапки "Жирафы" </span>
+				        </br>
+				        </br>
+				        <div> <img src="images/giraf.jpg"> </div>
+				        </br>
+				        <span class="cena"> <strong> &nbsp &nbsp 1250P &nbsp &nbsp </strong> </span>
+				        <span> <a class="vkorzinu" href="#"> &nbsp  в корзину  &nbsp </a>  </span>
+				        </br>
+				        </br>
+				        </div>  
+				                  </div>
+				                  
+				                  <div class="col-md-4">
+				          <div class="fotogiraf">
+				         </br>
+				        <span> Тапки "Жирафы" </span>
+				        </br>
+				        </br>
+				        <div> <img src="images/giraf30.jpg"> </div>
+				        </br>
+				        <span class="cena"> <strong style=" text-decoration:line-through; font-size:10px;"> 1250P  </strong> <strong style="color:#f3456a;">  &nbsp 950P</strong> </span>
+				        <span> <a class="vkorzinu" href="#"> &nbsp  в корзину  &nbsp </a>  </span>
+				        </br>
+				        </br>
+				        </div> 
+				        
+				        </br>
+				        </br>  
+				        
+				         <div class="fotogiraf">
+				         </br>
+				        <span> Тапки "Жирафы" </span>
+				        </br>
+				        </br>
+				        <div> <img src="images/giraf.jpg"> </div>
+				        </br>
+				        <span class="cena"> <strong> &nbsp &nbsp 1250P &nbsp &nbsp </strong> </span>
+				        <span> <a class="vkorzinu" href="#"> &nbsp  в корзину  &nbsp </a>  </span>
+				        </br>
+				        </br>
+				        </div> 
+				        
+				        </br>
+				        </br>
+				        
+				         <div class="fotogiraf">
+				         </br>
+				        <span> Тапки "Жирафы" </span>
+				        </br>
+				        </br>
+				        <div> <img src="images/giraf.jpg"> </div>
+				        </br>
+				        <span class="cena"> <strong> &nbsp &nbsp 1250P &nbsp &nbsp </strong> </span>
+				        <span> <a class="vkorzinu" href="#"> &nbsp  в корзину  &nbsp </a>  </span>
+				        </br>
+				        </br>
+				        </div> 
+				        
+				        </br>
+				        </br>
+				        
+				         <div class="fotogiraf">
+				         </br>
+				        <span> Тапки "Жирафы" </span>
+				        </br>
+				        </br>
+				        <div> <img src="images/giraf.jpg"> </div>
+				        </br>
+				        <span class="cena"> <strong> &nbsp &nbsp 1250P &nbsp &nbsp </strong> </span>
+				        <span> <a class="vkorzinu" href="#"> &nbsp  в корзину  &nbsp </a>  </span>
+				        </br>
+				        </br>
+				        </div> 
+				        
+				        </br>
+				        </br>
+				        
+				         <div class="fotogiraf">
+				         </br>
+				        <span> Тапки "Жирафы" </span>
+				        </br>
+				        </br>
+				        <div> <img src="images/giraf.jpg"> </div>
+				        </br>
+				        <span class="cena"> <strong> &nbsp &nbsp 1250P &nbsp &nbsp </strong> </span>
+				        <span> <a class="vkorzinu" href="#"> &nbsp  в корзину  &nbsp </a>  </span>
+				        </br>
+				        </br>
+				        </div> 
+				        
+				        </br>
+				        </br>
+				        
+				         <div class="fotogiraf">
+				         </br>
+				        <span> Тапки "Жирафы" </span>
+				        </br>
+				        </br>
+				        <div> <img src="images/giraf.jpg"> </div>
+				        </br>
+				        <span class="cena"> <strong> &nbsp &nbsp 1250P &nbsp &nbsp </strong> </span>
+				        <span> <a class="vkorzinu" href="#"> &nbsp  в корзину  &nbsp </a>  </span>
+				        </br>
+				        </br>
+				        </div> 
+				        
+				        </br>
+				        </br>
+				        
+				        <center>
+				        <span class="pokazatvce">
+					     <span> <a style="color:white;" href="#"> &nbsp&nbsp Показать ещё &nbsp&nbsp</a>
+					     </span>
+					     </span>
+					     </center>
+					     
+					      </br>
+				         </br>
+				                  </div>
+				                  
+				                  
+				                  <div class="col-md-4">
+				          <div class="fotogiraf">
+				         </br>
+				        <span> Тапки "Жирафы" </span>
+				        </br>
+				        </br>
+				        <div> <img src="images/giraf.jpg"> </div>
+				        </br>
+				        <span class="cena"> <strong> &nbsp &nbsp 1250P &nbsp &nbsp </strong> </span>
+				        <span> <a class="vkorzinu" href="#"> &nbsp  в корзину  &nbsp </a>  </span>
+				        </br>
+				        </br>
+				        </div> 
+				        
+				        </br>
+				        </br>
+				        
+				         <div class="fotogiraf">
+				         </br>
+				        <span> Тапки "Жирафы" </span>
+				        </br>
+				        </br>
+				        <div> <img src="images/giraf.jpg"> </div>
+				        </br>
+				        <span class="cena"> <strong> &nbsp &nbsp 1250P &nbsp &nbsp </strong> </span>
+				        <span> <a class="vkorzinu" href="#"> &nbsp  в корзину  &nbsp </a>  </span>
+				        </br>
+				        </br>
+				        </div> 
+				        
+				        </br>
+				        </br>
+				        
+				         <div class="fotogiraf">
+				         </br>
+				        <span> Тапки "Жирафы" </span>
+				        </br>
+				        </br>
+				        <div> <img src="images/giraf.jpg"> </div>
+				        </br>
+				        <span class="cena"> <strong> &nbsp &nbsp 1250P &nbsp &nbsp </strong> </span>
+				        <span> <a class="vkorzinu" href="#"> &nbsp  в корзину  &nbsp </a>  </span>
+				        </br>
+				        </br>
+				        </div> 
+				        
+				        </br>
+				        </br>
+				        
+				         <div class="fotogiraf">
+				         </br>
+				        <span> Тапки "Жирафы" </span>
+				        </br>
+				        </br>
+				        <div> <img src="images/giraf.jpg"> </div>
+				        </br>
+				        <span class="cena"> <strong> &nbsp &nbsp 1250P &nbsp &nbsp </strong> </span>
+				        <span> <a class="vkorzinu" href="#"> &nbsp  в корзину  &nbsp </a>  </span>
+				        </br>
+				        </br>
+				        </div> 
+				        
+				        </br>
+				        </br>
+				        
+				         <div class="fotogiraf">
+				         </br>
+				        <span> Тапки "Жирафы" </span>
+				        </br>
+				        </br>
+				        <div> <img src="images/giraf.jpg"> </div>
+				        </br>
+				        <span class="cena"> <strong> &nbsp &nbsp 1250P &nbsp &nbsp </strong> </span>
+				        <span> <a class="vkorzinu" href="#"> &nbsp  в корзину  &nbsp </a>  </span>
+				        </br>
+				        </br>
+				        </div> 
+				        
+				        </br>
+				        </br>
+				        
+				         <div class="fotogiraf">
+				         </br>
+				        <span> Тапки "Жирафы" </span>
+				        </br>
+				        </br>
+				        <div> <img src="images/giraf.jpg"> </div>
+				        </br>
+				        <span class="cena"> <strong> &nbsp &nbsp 1250P &nbsp &nbsp </strong> </span>
+				        <span> <a class="vkorzinu" href="#"> &nbsp  в корзину  &nbsp </a>  </span>
+				        </br>
+				        </br>
+				        </div> 
+				                  </div>
+				                  
+				   
+          </div>
+                          <!-- центральный контент финишь --> 
+                          
+                          
+				               
+                          
+                 <h3 style="color:orange;"> О нашей компании </h3> 
+                 <p> Как-то на китайском рынке на меня напал истерический смех от прикольного вида 
+                      тапок-сапожек.  Как-то на китайском рынке на меня напал истерический смех от прикольного вида 
+                      тапок-сапожек. По началу я даже не поняла, что это тапки, потому как это и не тапки были, а теплые 
+							 домашние сапоги, замасее заверила, что товар очень хороший и положительно влияющий на хорошее 
+							 настроение. Как-то на китайском рынке на меня напал истерический смех от прикольного вида 
+                      тапок-сапожек.  Как-то на китайском рынке на меня напал истерический смех от прикольного вида 
+                      тапок-сапожек.
+                 </p> 
+                 </br>
+                 </br>
+                   <h3 style="color:orange;"> Заголовок второй </h3> 
+                   <p> Как-то на китайском рынке на меня напал истерический смех от прикольного вида 
+                      тапок-сапожек.  Как-то на китайском рынке на меня напал истерический смех от прикольного вида 
+                      тапок-сапожек. По началу я даже не поняла, что это тапки, потому как это и не тапки были, а теплые 
+							 домашние сапоги, замасее заверила, что товар очень хороший и положительно влияющий на хорошее 
+							 настроение. Как-то на китайском рынке на меня напал истерический смех от прикольного вида 
+                      тапок-сапожек. По началу я даже не поняла, что это тапки, потому как это и не тапки были, а теплые 
+							 домашние сапоги, замасее заверила, что товар очень хороший и положительно влияющий на хорошее 
+							 настроение. Как-то на китайском рынке на меня напал истерический смех от прикольного вида 
+                      тапок-сапожек.
+                 </p> 
+                                        
+      </div>	
+   </div>
+                     </br>
+       
+   
+   <footer style="background:#756857; height:210px;">
+   <div class="container">
+   <div style="background:#756857;">
+        </br>
+        </br>
+      <div class="col-md-3"> <img src="images/men.jpg" >
+      </div>
+      <div class="col-md-3">
+          <h4 style=" color: orange;"> Клиентам </h4>
+          <div> <a style="color:white;" href="#"> Доставка </a> </div>
+               </br>
+          <div> <a style="color:white;" href="#"> Оплата </a> </div>
+                </br>
+          <div> <a style="color:white;" href="#"> Возврат </a> </div>
+      </div>
+      <div class="col-md-3">
+            <h4 style=" color: orange;"> Информация </h4>
+          <div> <a style="color:white;" href="#"> Статьи </a> </div>
+               </br>
+          <div> <a style="color:white;" href="#"> Связаться с нами </a> </div>
+                </br>
+          <div> <a style="color:white;" href="#"> Как выбрать размер </a> </div>
+      </div>
+      <div class="col-md-3">
+             <h4 style=" color: orange;"> Принимаем к оплате </h4>
+             <div> <img src="images/1visa.jpg"> </div>
+             <h4 style=" color: orange;"> Счётчики </h4>
+            <div> <img src="images/hotlog.jpg"> <img src="images/schet.jpg"> </div>  
+      </div>
+      </div>
+   </div>
+      </br>
+     <div style="text-align:center; font-size:11px; background-color:#272318; color:#c1a35a; height:32px; line-height:32px;">
+      2013-2014, MRTAPOK.RU магазин домашней обуви и акссесуаров.Карта сайт.</div> 
+   </footer>
+ 
+                        </br>
+                        </br>
+                        </br>
+                <div class="gradient">  DEMONSTRASHKA GRADIENTA  </div>
+                
+                           
+                       
+                        </br>
+                        </br>
+                   
+                                 
+         
+            
+           
+
+
+
+  </body>
+</html>
